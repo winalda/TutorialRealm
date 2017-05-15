@@ -80,6 +80,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A70DF3E81EC9F96D00286226 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CC46455B1EC8059C007020EE /* DataBase.h */,
+				CC46455C1EC8059C007020EE /* DataBase.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
 		A7BA65E51EC61A4A00B120E6 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +205,7 @@
 		CC4645561EC7F115007020EE /* Bussiness */ = {
 			isa = PBXGroup;
 			children = (
+				A70DF3E81EC9F96D00286226 /* Persistence */,
 				CC4645571EC7F132007020EE /* Utils */,
 			);
 			name = Bussiness;
@@ -206,8 +216,6 @@
 			children = (
 				CC4645581EC7F15D007020EE /* Alert.h */,
 				CC4645591EC7F15D007020EE /* Alert.m */,
-				CC46455B1EC8059C007020EE /* DataBase.h */,
-				CC46455C1EC8059C007020EE /* DataBase.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
