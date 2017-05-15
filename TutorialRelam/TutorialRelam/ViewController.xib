@@ -20,24 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0y-QP-73o">
-                    <rect key="frame" x="16" y="65" width="343" height="43"/>
-                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="343" id="qM0-Ib-1zb"/>
-                        <constraint firstAttribute="height" constant="43" id="rHn-qe-ytV"/>
-                    </constraints>
-                    <state key="normal" title="Insert"/>
-                    <connections>
-                        <action selector="didTapInsertBtn:" destination="-1" eventType="touchUpInside" id="YgX-EE-9tP"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wO-Bn-8BE">
-                    <rect key="frame" x="16" y="116" width="343" height="43"/>
+                    <rect key="frame" x="16" y="136" width="343" height="43"/>
                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="43" id="LYh-xl-546"/>
-                        <constraint firstAttribute="width" constant="343" id="tyJ-90-z63"/>
+                        <constraint firstAttribute="width" constant="343" id="fpD-Ay-BMT"/>
+                        <constraint firstAttribute="height" constant="43" id="zzw-dz-fRc"/>
                     </constraints>
                     <state key="normal" title="Delete"/>
                     <connections>
@@ -45,28 +33,42 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6nC-lB-cds">
-                    <rect key="frame" x="16" y="167" width="343" height="500"/>
+                    <rect key="frame" x="16" y="187" width="343" height="480"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="500" id="F2G-z2-QKr"/>
-                        <constraint firstAttribute="width" constant="343" id="afC-sn-laQ"/>
+                        <constraint firstAttribute="width" constant="343" id="2Zm-cN-Mgw"/>
+                        <constraint firstAttribute="height" constant="480" id="BQL-Wt-dlJ"/>
                     </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="U5E-Ed-4uV"/>
+                        <outlet property="delegate" destination="-1" id="TrR-ah-dSw"/>
+                    </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0y-QP-73o">
+                    <rect key="frame" x="16" y="85" width="343" height="43"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="947-1I-AYK"/>
+                        <constraint firstAttribute="height" constant="43" id="lv8-Jy-DRm"/>
+                    </constraints>
+                    <state key="normal" title="Insert"/>
+                    <connections>
+                        <action selector="didTapInsertBtn:" destination="-1" eventType="touchUpInside" id="YgX-EE-9tP"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="6nC-lB-cds" firstAttribute="top" secondItem="2wO-Bn-8BE" secondAttribute="bottom" constant="8" id="5UJ-JA-ZOw"/>
-                <constraint firstAttribute="bottom" secondItem="6nC-lB-cds" secondAttribute="bottom" id="6Jq-RZ-MlJ"/>
-                <constraint firstAttribute="bottom" secondItem="6nC-lB-cds" secondAttribute="bottom" id="BeN-CC-aws"/>
-                <constraint firstItem="2wO-Bn-8BE" firstAttribute="top" secondItem="b0y-QP-73o" secondAttribute="bottom" constant="8" symbolic="YES" id="KCE-s2-JS3"/>
-                <constraint firstItem="2wO-Bn-8BE" firstAttribute="leading" secondItem="6nC-lB-cds" secondAttribute="leading" id="Q5i-Us-SQh"/>
-                <constraint firstItem="2wO-Bn-8BE" firstAttribute="leading" secondItem="b0y-QP-73o" secondAttribute="leading" id="REK-i5-bkc"/>
-                <constraint firstItem="b0y-QP-73o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="cjm-Fl-5s2"/>
-                <constraint firstItem="b0y-QP-73o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="gN1-1P-xe3"/>
-                <constraint firstItem="2wO-Bn-8BE" firstAttribute="trailing" secondItem="6nC-lB-cds" secondAttribute="trailing" id="hfD-Ry-fHr"/>
-                <constraint firstAttribute="trailing" secondItem="b0y-QP-73o" secondAttribute="trailing" constant="16" id="rKJ-TZ-e1k"/>
-                <constraint firstItem="6nC-lB-cds" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="uFc-AX-6ow"/>
-                <constraint firstAttribute="trailing" secondItem="6nC-lB-cds" secondAttribute="trailing" constant="16" id="y32-fO-dAD"/>
+                <constraint firstItem="b0y-QP-73o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="39n-8i-XYu"/>
+                <constraint firstAttribute="bottom" secondItem="6nC-lB-cds" secondAttribute="bottom" id="C11-nV-Pno"/>
+                <constraint firstAttribute="trailing" secondItem="6nC-lB-cds" secondAttribute="trailing" constant="16" id="H8A-Jm-Iif"/>
+                <constraint firstItem="6nC-lB-cds" firstAttribute="top" secondItem="2wO-Bn-8BE" secondAttribute="bottom" constant="8" id="Sti-eG-faF"/>
+                <constraint firstItem="6nC-lB-cds" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="XT1-oW-KXm"/>
+                <constraint firstAttribute="trailing" secondItem="2wO-Bn-8BE" secondAttribute="trailing" constant="16" id="ZyX-tK-g16"/>
+                <constraint firstAttribute="trailing" secondItem="b0y-QP-73o" secondAttribute="trailing" constant="16" id="cZh-EP-Nkd"/>
+                <constraint firstItem="2wO-Bn-8BE" firstAttribute="top" secondItem="b0y-QP-73o" secondAttribute="bottom" constant="8" id="mL5-gj-MZu"/>
+                <constraint firstItem="2wO-Bn-8BE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="mgh-1I-Cbe"/>
+                <constraint firstItem="b0y-QP-73o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="85" id="zFa-xZ-wXQ"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="54.5"/>
         </view>

@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PeopleInformationTable.h"
+#import "Alert.h"
 
-@interface ViewController : UIViewController
-{
-    RLMResults *tableArray;
-    PeopleInformationTable *selectedDataObject;
-}
+@interface ViewController : UIViewController <AlertViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 -(IBAction)didTapInsertBtn:(id)sender;
 -(IBAction)didTapDeleteBtn:(id)sender;

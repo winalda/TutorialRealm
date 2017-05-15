@@ -18,6 +18,8 @@
 		A7BA66141EC6276500B120E6 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA66131EC6276500B120E6 /* libc++.1.tbd */; };
 		A7BA66191EC62C2B00B120E6 /* PeopleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BA66171EC62C2B00B120E6 /* PeopleCell.m */; };
 		A7BA661A1EC62C2B00B120E6 /* PeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7BA66181EC62C2B00B120E6 /* PeopleCell.xib */; };
+		CC46455A1EC7F15D007020EE /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4645591EC7F15D007020EE /* Alert.m */; };
+		CC46455D1EC8059C007020EE /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CC46455C1EC8059C007020EE /* DataBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		A7BA66171EC62C2B00B120E6 /* PeopleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleCell.m; sourceTree = "<group>"; };
 		A7BA66181EC62C2B00B120E6 /* PeopleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleCell.xib; sourceTree = "<group>"; };
 		A7BA661C1EC62D9300B120E6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CC4645581EC7F15D007020EE /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
+		CC4645591EC7F15D007020EE /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
+		CC46455B1EC8059C007020EE /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		CC46455C1EC8059C007020EE /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 		CC741CC7353E692653776A39 /* Pods-TutorialRelam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorialRelam.release.xcconfig"; path = "Pods/Target Support Files/Pods-TutorialRelam/Pods-TutorialRelam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +101,7 @@
 		A7BA65F01EC61A4A00B120E6 /* TutorialRelam */ = {
 			isa = PBXGroup;
 			children = (
+				CC4645561EC7F115007020EE /* Bussiness */,
 				A7BA66111EC6263600B120E6 /* Modelo */,
 				A7BA660A1EC6252F00B120E6 /* ViewController */,
 				A7BA660C1EC6255E00B120E6 /* View */,
@@ -137,6 +144,7 @@
 		A7BA660C1EC6255E00B120E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7BA65FD1EC61A4A00B120E6 /* Assets.xcassets */,
 				A7BA660D1EC6258D00B120E6 /* xib */,
 			);
 			name = View;
@@ -146,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				A7BA66151EC62BD900B120E6 /* Cells */,
-				A7BA65FD1EC61A4A00B120E6 /* Assets.xcassets */,
 				A7BA66081EC6230300B120E6 /* ViewController.xib */,
 			);
 			name = xib;
@@ -184,6 +191,25 @@
 				A7BA66171EC62C2B00B120E6 /* PeopleCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		CC4645561EC7F115007020EE /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				CC4645571EC7F132007020EE /* Utils */,
+			);
+			name = Bussiness;
+			sourceTree = "<group>";
+		};
+		CC4645571EC7F132007020EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC4645581EC7F15D007020EE /* Alert.h */,
+				CC4645591EC7F15D007020EE /* Alert.m */,
+				CC46455B1EC8059C007020EE /* DataBase.h */,
+				CC46455C1EC8059C007020EE /* DataBase.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC46455A1EC7F15D007020EE /* Alert.m in Sources */,
+				CC46455D1EC8059C007020EE /* DataBase.m in Sources */,
 				A7BA65F91EC61A4A00B120E6 /* ViewController.m in Sources */,
 				A7BA65F61EC61A4A00B120E6 /* AppDelegate.m in Sources */,
 				A7BA66101EC6262F00B120E6 /* PeopleInformationTable.m in Sources */,

@@ -10,6 +10,9 @@
 
 @implementation PeopleCell
 
+@synthesize lblName = _lblName;
+@synthesize lblCity = _lblCity;
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
